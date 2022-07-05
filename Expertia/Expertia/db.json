@@ -1,0 +1,100 @@
+{
+  "Companies": [
+    {
+      "role": "MERN",
+      "location": "Bengaluru",
+      "CTC": 9,
+      "company": "Pin PVT LTD",
+      "job type": "Full Time",
+      "description": [
+        "Full understanding & experience in creating MEAN or MERN stack web apps.Good understanding of front-end technologies, such as JavaScript, HTML5 and CSS3.",
+        "Understanding of REST, AJAX, JSON, XML and JWT.",
+        "Good understanding of NodeJS for backend and ability to create simple but good user interfaces with HTML, CSS, Bootstrap and JavaScript, JQuery, Angular/React.Familiarity with SQL/NoSQL (PostgreSQL, MySQL, MongoDB) databases and their declarative query languages.",
+        "Having some understanding of 3D modelling, graphics, and visualization is a big plus.",
+        "Understanding of publisher and subscriber(pub/sub) based communication.",
+        "Understanding of microservices, Unit Testing, and AWS/GCP is a plus.",
+        "Experience managing full-stack, multi-language, multi-framework software development.",
+        "Strong logical thinking; proactive, open-minded and learning attitude."
+      ],
+      "id": "001"
+    },
+    {
+      "role": "REACT",
+      "location": "Noida",
+      "CTC": 8,
+      "company": "SEED PVT LTD",
+      "job type": "Full Time",
+      "description": [
+        "Full understanding & experience in creating MEAN or MERN stack web apps.Good understanding of front-end technologies, such as JavaScript, HTML5 and CSS3.",
+        "Understanding of REST, AJAX, JSON, XML and JWT.",
+        "Good understanding of NodeJS for backend and ability to create simple but good user interfaces with HTML, CSS, Bootstrap and JavaScript, JQuery, Angular/React.Familiarity with SQL/NoSQL (PostgreSQL, MySQL, MongoDB) databases and their declarative query languages.",
+        "Having some understanding of 3D modelling, graphics, and visualization is a big plus.",
+        "Understanding of publisher and subscriber(pub/sub) based communication.",
+        "Understanding of microservices, Unit Testing, and AWS/GCP is a plus.",
+        "Experience managing full-stack, multi-language, multi-framework software development.",
+        "Strong logical thinking; proactive, open-minded and learning attitude."
+      ],
+      "id": "002"
+    },
+    {
+      "role": "JAVASCRIPT",
+      "location": "Delhi",
+      "CTC": 9,
+      "company": "masai PVT LTD",
+      "job type": "Full Time",
+      "description": [
+        "Full understanding & experience in creating MEAN or MERN stack web apps.Good understanding of front-end technologies, such as JavaScript, HTML5 and CSS3.",
+        "Understanding of REST, AJAX, JSON, XML and JWT.",
+        "Good understanding of NodeJS for backend and ability to create simple but good user interfaces with HTML, CSS, Bootstrap and JavaScript, JQuery, Angular/React.Familiarity with SQL/NoSQL (PostgreSQL, MySQL, MongoDB) databases and their declarative query languages.",
+        "Having some understanding of 3D modelling, graphics, and visualization is a big plus.",
+        "Understanding of publisher and subscriber(pub/sub) based communication.",
+        "Understanding of microservices, Unit Testing, and AWS/GCP is a plus.",
+        "Experience managing full-stack, multi-language, multi-framework software development.",
+        "Strong logical thinking; proactive, open-minded and learning attitude."
+      ],
+      "id": "003"
+    },
+    {
+      "role": "REACT",
+      "location": "Bengaluru",
+      "CTC": 7,
+      "company": "Freshwork PVT LTD",
+      "job type": "Full Time",
+      "description": [
+        "Full understanding & experience in creating MEAN or MERN stack web apps.Good understanding of front-end technologies, such as JavaScript, HTML5 and CSS3.",
+        "Understanding of REST, AJAX, JSON, XML and JWT.",
+        "Good understanding of NodeJS for backend and ability to create simple but good user interfaces with HTML, CSS, Bootstrap and JavaScript, JQuery, Angular/React.Familiarity with SQL/NoSQL (PostgreSQL, MySQL, MongoDB) databases and their declarative query languages.",
+        "Having some understanding of 3D modelling, graphics, and visualization is a big plus.",
+        "Understanding of publisher and subscriber(pub/sub) based communication.",
+        "Understanding of microservices, Unit Testing, and AWS/GCP is a plus.",
+        "Experience managing full-stack, multi-language, multi-framework software development.",
+        "Strong logical thinking; proactive, open-minded and learning attitude."
+      ],
+      "id": "004"
+    },
+    {
+      "role": "MERN",
+      "location": "Pune",
+      "CTC": 5,
+      "company": "Uplers PVT LTD",
+      "job type": "Internship",
+      "description": [
+        "Full understanding & experience in creating MEAN or MERN stack web apps.Good understanding of front-end technologies, such as JavaScript, HTML5 and CSS3.",
+        "Understanding of REST, AJAX, JSON, XML and JWT.",
+        "Good understanding of NodeJS for backend and ability to create simple but good user interfaces with HTML, CSS, Bootstrap and JavaScript, JQuery, Angular/React.Familiarity with SQL/NoSQL (PostgreSQL, MySQL, MongoDB) databases and their declarative query languages.",
+        "Having some understanding of 3D modelling, graphics, and visualization is a big plus.",
+        "Understanding of publisher and subscriber(pub/sub) based communication.",
+        "Understanding of microservices, Unit Testing, and AWS/GCP is a plus.",
+        "Experience managing full-stack, multi-language, multi-framework software development.",
+        "Strong logical thinking; proactive, open-minded and learning attitude."
+      ],
+      "id": "005"
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "applyjob": []
+    }
+  ]
+}

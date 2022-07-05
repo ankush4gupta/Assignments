@@ -1,0 +1,45 @@
+.singlecompany-container {
+    margin-top: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+.singlecompany-main {
+    margin-top: 30px;
+    /* width: 60%; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+}
+
+.singlecompany-main h1 {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.companyname {
+    color: blue;
+}
+.applybtn{
+   
+        margin-right: 10px;
+        margin-top: 20px;
+        justify-content: flex-end;
+        padding: 5px 15px;
+        border: 1px solid black;
+        width: fit-content;
+        border-radius: 8px;
+        background-color: rgba(56, 132, 218, 0.4);
+        color: blue;
+}
+.singlecompany-summary{
+    margin-top: 30px;
+}
+.singlecompany-summary>h1{
+    font-size: 18px;
+    font-weight: 500;
+}
+.singlecompany-summary>p{
+    font-style: italic;
+    
+}

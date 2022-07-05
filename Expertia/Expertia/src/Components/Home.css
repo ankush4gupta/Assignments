@@ -1,0 +1,33 @@
+
+.searchbox{
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+}
+.searchbox input{
+    padding: 10px 20px;
+    width: 100%;
+    border: 3px solid rgba(56, 132, 218, 0.4);
+    border-radius: 8px;
+    outline :none;
+}
+.company-div {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 20px;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.company-sub_div {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(56, 132, 218, 0.4) 0px 0px 0px 2px, rgba(36, 127, 231, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.company-sub_div:hover {
+
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
