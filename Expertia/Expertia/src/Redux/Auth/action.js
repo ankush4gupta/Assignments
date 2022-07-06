@@ -16,7 +16,7 @@ export const registeruser = (token) => {
 }
 export const registerdata = (userdata) => async (dispatch) => {
     console.log(userdata, "user")
-    const data = await axios.post(`http://localhost:3008/register`, userdata);
+    const data = await axios.post(`https://job-interviewapplication.herokuapp.com/register`, userdata);
     console.log(data.data, "afterlogin")
     dispatch(registeruser({
         token: data.data,
@@ -26,7 +26,7 @@ export const registerdata = (userdata) => async (dispatch) => {
 export const logindata = (userdata) => async (dispatch) => {
 
     console.log(userdata, "user")
-    const data = await axios.post(`http://localhost:3008/login`, userdata);
+    const data = await axios.post(`https://job-interviewapplication.herokuapp.com/login`, userdata);
     console.log(data.data, "afterlogin")
     dispatch(loginuser({
         token: data.data,
