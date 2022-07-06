@@ -1,55 +1,47 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./jobdetail.css"
+import "./jobdetail.css";
+import { fetchsinglecompany } from "../Redux/Company/action";
+
+import { useDispatch } from "react-redux";
+
 
 export const Jobdetail = () => {
+
+
+    let dispatch = useDispatch()
+
     let { id } = useParams();
+    // console.log("id",id)
+    const [apply, setapply] = useState(false)
     const [singlecompany, setsinglecompany] = useState({});
-    const jobapply = async () => {
-        let getuser = await fetch("http://localhost:3080/users/user1");
-        let getuserdata = await getuser.json();
-        console.log(getuserdata, "getting data");
-        // console.log()
 
-        getuserdata.applyjob.push(singlecompany.id)
-        console.log(getuserdata, "adding data")
-        let res = await fetch("http://localhost:3080/users/user1", {
-            method: "PATCH",
-
-
-            data: JSON.stringify(getuserdata)
-        })
-        let finalres = await res.json()
-        console.log(finalres, "final")
-
-
-
-    }
 
     useEffect(() => {
-        fetchsinglecompany()
+        fetchsinglecompany(id).then(e => setsinglecompany(e))
     }, [])
-    const fetchsinglecompany = async () => {
-        let res = await fetch(`http://localhost:3080/Companies/${id}`);
-        let result = await res.json();
-        console.log(result, "result")
-        setsinglecompany(result)
-    }
+
     return <div className="singlecompany-container">
 
         <div className="singlecompany-main">
-            <h1>{singlecompany.role} Developer</h1>
-            <p className="companyname">{singlecompany.company}</p>
-            <p>{singlecompany.loaction}</p>
-            <p>"₹"{singlecompany.CTC} Lpa</p>
-            <button className="applybtn" onClick={jobapply}>Apply</button>
+            <div className="companydetails">
+                <h1>{singlecompany.role} Developer</h1>
+                <p className="companyname">{singlecompany.companyName}</p>
+                <p>{singlecompany.location}</p>
+                <p>"₹"{singlecompany.CTC} Lpa</p>
+                <button className="applybtn" onClick={() => setapply(!apply)} >{apply ? "Applied" : "Apply"}</button>
+            </div>
+            <div className="logo">
+                <img src={singlecompany.logo} alt="" />
+            </div>
+
 
         </div>
         <div className="singlecompany-summary">
             <h1>Full Job Description</h1>
             <p>Job Summary</p>
             {
-                singlecompany.description ? singlecompany.description.map((e, i) => {
+                singlecompany.jobSummary ? singlecompany.jobSummary.map((e, i) => {
                     return <ul key={i}>
                         <li>{e}</li>
                     </ul>

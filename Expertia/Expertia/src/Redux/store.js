@@ -3,9 +3,11 @@ import thunk from "redux-thunk";
 import { AuthReducer } from "./Auth/reducer";
 import { CompanyReducer } from "./Company/reducer";
 
+
 const rootReducer = combineReducers({
     AuthReducer: AuthReducer,
-    CompanyReducer : CompanyReducer
+    CompanyReducer: CompanyReducer,
+
 })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk))

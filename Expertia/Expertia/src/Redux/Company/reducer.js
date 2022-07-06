@@ -5,7 +5,7 @@ export const CompanyReducer = (store = init, { type, payload }) => {
     switch (type) {
         case COMPANY:
             return {
-                ...store, user: payload
+                ...store, company: payload
             }
         default: return store
 

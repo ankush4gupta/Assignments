@@ -1,0 +1,41 @@
+.loginContainer {
+    width: 70%;
+    margin: auto;
+
+
+}
+
+.loginContainer>h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: rgba(56, 132, 218, 0.4) 1px 2px 10px;
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+form {
+    width: 50%;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgba(56, 132, 218, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
+}
+
+form>input {
+    margin-top: 20px;
+}
+
+form>input[type="submit"]:hover {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
