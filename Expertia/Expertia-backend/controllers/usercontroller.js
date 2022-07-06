@@ -1,4 +1,5 @@
 const express = require("express");
+const { findById } = require("../models/user.model");
 const router = express.Router();
 const User = require("../models/user.model");
 
@@ -19,12 +20,18 @@ router.get("/:id", async (req, res) => {
 
 router.patch("/:id", async (req, res) => {
     try {
-        let user = await User.updateOne(
+        let updateduser = await User.updateOne(
             { _id: req.params.id },
             { $push: { applyjob: req.body } }
         );
+        if (updateduser){
 
-        return res.status(200).send(user);
+            let user =  await findById(req.params.id).lean().exec()
+            return res.status(200).send({ updateduser,user});
+        }
+        res.send("Not able to apply")
+
+
     } catch (error) {
         res.status(500).send({ message: "error", error: error.message })
     }

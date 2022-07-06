@@ -32,7 +32,7 @@ const login = async (req, res) => {
         let user = await User.findOne({ email: req.body.email });
         //  If user not found return msg
         if (!user) {
-            res.status(400).send({ message: "Please enter valid details" })
+            return res.status(400).send({ message: "Please enter valid details" })
         }
         // matching hashed password
         const match = user.checkPassword(req.body.password);
@@ -43,10 +43,10 @@ const login = async (req, res) => {
         // genrating token
         const token = newToken(user);
         // returning success result
-        res.status(201).send({ user, token })
+        return res.status(201).send({ user, token })
 
     } catch (error) {
-        res.status(500).send(error.message);
+        return res.status(500).send(error.message);
     }
 }
 

@@ -6,6 +6,7 @@ const CompanySchema = mongoose.Schema({
     location: { type: String, required: true, },
     CTC: { type: Number, required: true },
     jobSummary: [],
+    jobType: { type: String }
 
 
 })
