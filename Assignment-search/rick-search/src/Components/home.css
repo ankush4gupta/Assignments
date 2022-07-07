@@ -1,0 +1,99 @@
+.main-box {
+    background-color: #e5e5e5;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.search-box {
+    width: 32%;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    /* gap : 20px; */
+    /* padding: 5px 0px; */
+    align-items: center;
+    border-radius: 2px;
+    /* padding: 10px; */
+    /* border: 1px solid red; */
+
+}
+
+.search-box>input {
+    width: 74%;
+    border: none;
+    padding: 16px 10px;
+    outline: none;
+    /* cursor: text; */
+}
+
+.container {
+    border-radius: 2px;
+    display: flex;
+    width: 31%;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding: 7px;
+    margin-bottom: 5px;
+    background-color: white;
+    /* justify-content: space-around; */
+}
+
+.character {
+    width: 50%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.character img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.character_name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+.dot-alive,
+.dot-unknown,
+.dot-dead {
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.dot-unknown {
+    background-color: gray;
+}
+
+.dot-dead {
+    background-color: black;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.pagination :hover {
+    cursor: pointer;
+    background-color: aqua;
+}
